@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <nav class="menu js-menu">
+  <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animals</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -20,9 +20,9 @@
       <li><a href="https://github.com/eduardowanderleyde">Dev →</a></li>
     </ul>
   </nav>
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" data-anime="scroll" id="animais">
     <h1 class="titulo">Fantastic Beasts</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista" data-tab="menu">
       <li>
         <img src="img/imagem1.jpg">
       </li>
@@ -42,38 +42,38 @@
         <img src="img/imagem6.jpg">
       </li>
     </ul>
-    <div class="animais-descricao js-tabcontent">
-      <section>
+    <div class="animais-descricao" data-tab="content">
+      <section data-anime="show-right">
         <h2>Fox</h2>
         <p>Foxes are omnivorous mammals belonging to the Canidae family. They are medium-sized vulpines characterized by a long snout and a long, bushy tail.</p>
         <p>They also have oval-shaped pupils, similar to the vertical pupils of felines.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Squirrel</h2>
         <p>Squirrels are small rodents known for their bushy tails and climbing abilities.</p>
         <p>Of about 200 recognized species of squirrels, many are found in forests around the world.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Bear</h2>
         <p>Bears are large mammals that inhabit various regions of the world, including North America, Asia, and Europe.</p>
         <p>They are known for their strength and are omnivorous, feeding on a variety of foods, including fish, fruits, and plants.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Wolf</h2>
         <p>Wolves are carnivores belonging to the Canidae family and are known for living in social groups called packs.</p>
         <p>They are skilled predators and play an important role in the ecosystems in which they live.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Monkey</h2>
         <p>Monkeys are primates found in various parts of the world and are known for their agility and intelligence.</p>
         <p>They live in complex social groups and have a wide range of behaviors and characteristics, depending on the species.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Lion</h2>
         <p>Lions are large felines that primarily inhabit Africa. They live in groups known as "prides" and are powerful predators.</p>
         <p>Lions are often regarded as the "kings of the jungle" due to their majesty and their position at the top of the food chain in their natural habitats.</p>
@@ -82,9 +82,9 @@
     </div>
   </section>
 
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq" data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
+    <dl class="faq-lista" data-anime="accordion">
       <dt>What is the age of the animals?</dt>
       <dd>Foxes are omnivorous mammals belonging to the Canidae family. They are medium-sized vulpines characterized by a long snout and a long, bushy tail.</dd>
       <dt>Are they fantastic?</dt>
@@ -96,7 +96,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato" data-anime="scroll" id="contato">
     <h1 class="titulo">Contact</h1>
     <div class="mapa">
       <img src="img/mapa.png">
@@ -113,7 +113,8 @@
     <p>All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
