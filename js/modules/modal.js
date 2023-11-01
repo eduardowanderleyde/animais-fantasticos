@@ -5,9 +5,14 @@ const botaoFechar = document.querySelector('[data-modal="fechar"]');
 const containerModal = document.querySelector('[data-modal="container"]');
 
 if(botaoAbrir && botaoFechar && containerModal) {
-  function toggleModal(event) {
+  function abrirModal(event) {
     event.preventDefault();
-    containerModal.classList.toogle('ativo');
+    containerModal.classList.add('ativo');
+  }
+
+  function fecharModal(event) {
+    event.preventDefault();
+    containerModal.classList.remove('ativo');
   }
 
   function cliqueForaModal(event) {
@@ -16,8 +21,8 @@ if(botaoAbrir && botaoFechar && containerModal) {
     }
   }
 
-  botaoAbrir.addEventListener('click', toggleModal);
-  botaoFechar.addEventListener('click', toggleModal);
+  botaoAbrir.addEventListener('click', abrirModal);
+  botaoFechar.addEventListener('click', fecharModal);
   containerModal.addEventListener('click', cliqueForaModal);
   } 
 }
