@@ -1,0 +1,24 @@
+{
+  "name": "ew-fantastic-beasts",
+  "version": "1.0.0",
+  "description": "This project showcases an interactive website with dynamic text changes and the implementation of various JavaScript animations. The design of this website is both engaging and surprising, featuring navigation, an accordion list, event bubbling, modals, and a dropdown menu. Whether you're a developer or a user, you'll find something to enjoy on this site.",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardowanderleyde/animais-fantasticos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardowanderleyde/animais-fantasticos/issues"
+  },
+  "homepage": "https://github.com/eduardowanderleyde/animais-fantasticos#readme"
+}
