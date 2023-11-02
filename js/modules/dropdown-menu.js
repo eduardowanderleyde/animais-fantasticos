@@ -15,5 +15,5 @@ dropdownMenus.forEach(menu => {
     outsideClick(this, ['touchstart', 'click'], () => {
       this.classList.remove("active");
     });
- };
+}
 }
