@@ -9,6 +9,7 @@ export default class Tooltip {
     this.onMouseOver = this.onMouseOver.bind(this);
   }
 
+  //move the tooltip based on its style
   onMouseMove(event) {
     this.tooltipBox.style.top = `${event.pageY + 20}px`;
     if (event.pageX + 240 > window.innerWidth) {
@@ -18,6 +19,7 @@ export default class Tooltip {
     }
   }
 
+  //remove the tooltip box and remove the event listeners
   onMouseLeave({currentTarget}) {
     this.tooltipBox.remove();
     currentTarget.removeEventListener('mouseleave', this.onMouseLeave);
@@ -41,12 +43,14 @@ export default class Tooltip {
     currentTarget.addEventListener('mouseleave', this.onMouseLeave);
   }
 
+  //add the event listeners to each tooltip
   addTooltipsEvent() {
     this.tooltips.forEach((item) => {
       item.addEventListener('mouseover', this.onMouseOver);
     });
   }
 
+  //init the function
   init(){
     if(this.tooltips.length) {
       this.addTooltipsEvent();
