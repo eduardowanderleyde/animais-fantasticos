@@ -1,24 +1,20 @@
 {
-  "name": "ew-fantastic-beasts",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
-  "description": "This project showcases an interactive website with dynamic text changes and the implementation of various JavaScript animations. The design of this website is both engaging and surprising, featuring navigation, an accordion list, event bubbling, modals, and a dropdown menu. Whether you're a developer or a user, you'll find something to enjoy on this site.",
-  "main": "index.js",
-  "devDependencies": {
-    "eslint": "^8.52.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eduardowanderleyde/animais-fantasticos.git"
-  },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eduardowanderleyde/animais-fantasticos/issues"
-  },
-  "homepage": "https://github.com/eduardowanderleyde/animais-fantasticos#readme"
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
 }
