@@ -2,6 +2,12 @@
 
 This project showcases an interactive website with dynamic text changes and the implementation of various JavaScript animations. The design of this website is both engaging and surprising, featuring navigation, an accordion list, event bubbling, modals, and a dropdown menu. Whether you're a developer or a user, you'll find something to enjoy on this site.
 
+
+
+https://github.com/eduardowanderleyde/fantastic-bests-js-ES6-/assets/103546791/004d1833-ba85-4686-b603-0593addb5f04
+
+
+
 ![Website Screenshot](1.png)
 
 ![Website Screenshot](2.png)
